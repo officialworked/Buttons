@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+   
+
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(180deg, #f5eeb5 10%, #20d0c2 80%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+
+ 
+}
+
+.cont {
+  position: relative;
+  width: 16vw;
+  height: 8vw;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 0px 50px Black;
+  margin: 3vw 0;
+
+}
+.button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(to bottom, #E0FFFF	 0%, #ffff99 100%);
+  position: realtive;
+  border: 1px dashed red;
+  border-radius: 10px;
+  outline: none;
+  transition: box-shadow 0.3s linear;
+  box-shadow: inset 0px 10px 5px darkslategray	, inset 0px 0px 0px #F7EA25;
+
+}
+
+.button:active {
+    box-shadow: inset 0px 0px 0px black, inset 0px 0px 105px #ff9966;
+}
+
+.text {
+  display: flex;
+  position: absolute;
+  top: 20%;
+  font-size: 4vw;
+  text-shadow: 2px 2px black;
+  font-family: 'Anton', sans-serif;
+
+
+  
+  
+}
+
+p:nth-child(1n) {
+  transform: rotate(8deg);
+  animation: shake 0.5s ease infinite;
+  color: #2F4F4F		
+
+  }
+  p:nth-child(2n) {
+  transform: rotate(5deg);
+  animation: shake 0.5s ease-out infinite reverse;
+  color:goldenrod	
+
+  }
+ p:nth-child(3n) {
+  transform: rotate(-2deg);
+  animation: shake 0.5s 0.1s ease infinite;
+ 
+
+  }
+
+ p:nth-child(4n) {
+    transform: rotate(-5deg);
+    animation: shake 0.5s ease-in infinite reverse;
+  }
+
+@keyframes shake {
+    0% {
+      transform: translateX(0) rotate(8deg);
+    }
+    50% {
+      transform: translateX(4px) rotate(-3deg);
+    }
+
+    100% {
+      transform: translateX(0) rotate(6deg);
+    }
+  }
+
+i {
+  color: #2867B2;
+  margin-top: 1vw
+}
